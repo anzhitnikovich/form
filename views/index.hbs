@@ -1,0 +1,202 @@
+<head>
+   <style>
+       
+
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/5722871/pexels-photo-5722871.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    position: relative;
+}
+
+#hero:before{
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .container{
+    position: relative;
+    padding-top: 75px;
+}
+
+#hero h1{
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: 'Poppins' sans-serif;
+}
+#hero h2{
+    color: white;
+    margin: 10px 0 0 0;
+    font-size: 24px;
+}
+
+#hero .icon-box h3{
+    font-weight: 700;
+    margin-top: 10px;
+    font-style: 20px;
+    line-height: 26px;
+}
+
+#hero .icon-box h3 a{
+    color: white;
+
+}
+#hero .icon-box h3 a:hover{
+    color: teal;
+}
+
+.icon-box{
+    padding: 30px 20px;
+    border: 1px solid rgba(225, 225, 225, 0.3);
+    height: 100%;
+    text-align: center;
+}
+
+.icon-box:hover{
+    border-color: aquamarine
+}
+
+.about li{
+    list-style-type: none;
+}
+
+.cta{
+    background: linear-gradient(rgba(2,2,2,0.5), rgba(2,2,2,0.8)), url(https://images.pexels.com/photos/5722871/pexels-photo-5722871.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) fixed top center;
+    padding: 80px 0;
+    color: #fff
+}
+.cta h3{
+    font-weight: 700;
+    font-style: 28px;
+}
+
+.cta-btn{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 10px;
+}
+.cta-btn:hover{
+    background: teal ;
+    border-color: white;
+    color: white;
+}
+
+
+   </style>
+   
+</head>
+   
+ {{>navbar}}
+
+ 
+<section id="hero" class="d-flex align-items-center fustify-content-center">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-8">
+                        <h1>DRINKS</h1>
+                        <h2>drinks drinks drinks</h2>
+                    </div> 
+                </div>
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                              </svg>
+                              <h3><a href="#">Coffee</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                              </svg>
+                              <h3><a href="#">Lemonade</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                              </svg>
+                              <h3><a href="#">Water</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                              </svg>
+                              <h3><a href="#">Tea</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about my-5" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col lg-6 order-1 order-lg-2">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/4349733/pexels-photo-4349733.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    </div>
+                    <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 content">
+                        <h3>Some facts</h3>
+                        <p class="font-italic">
+                            There are different kinds of animals on our planet, and all of them are very important for it. For example, everybody knows that the sharks are dangerous for people, but they are useful for cleaning seawater. There are two types of animals: domestic (or pets) and wild.
+                        </p>
+                        <ul>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                              </svg>Coffee</li>
+                              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                              </svg>lemonade</li>
+                              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                              </svg>water</li>
+                              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                              </svg>tea</li>
+                        </ul>
+                        <p>People keep pets in their homes. And some wild animals are very dangerous. Domestic animals live next to people, whereas wild animals’ “homes” are forests, jungles, oceans and so on.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="cta mb-5">
+            <div class="container text-center">
+                <h3>Create your account</h3>
+                <p>create create create create create</p>
+                <a href="sign_up.html" class="cta-btn">Create</a>
+            </div>
+        </section>
+        
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
